@@ -1,0 +1,167 @@
+/* GALERIA-3D */
+
+.titulo-galeria {
+    color: #dfff00;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 6.5rem;
+}
+
+.galeria-1 {
+    height: 78vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+@media screen and (orientation:landscape) and (max-width:915px) {
+    .galeria-1 {
+        height: 130vh;
+        max-height: 65vw;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .galeria-1 {
+        height: 65vh;
+    }
+
+}
+
+.slider {
+    position: relative;
+    width: 230px;
+    height: 230px;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: perspective(1250px) rotateY(0deg);
+    }
+
+    100% {
+        transform: perspective(1250px) rotateY(360deg);
+    }
+}
+
+.slider {
+    span {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform-origin: center;
+        transform-style: preserve-3d;
+        transform: rotateY(calc(var(--i)*36deg)) translateZ(500px);
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 85%;
+        height: 100%;
+        border-radius: 5px;
+        object-fit: cover;
+        transition: 1.5s;
+    }
+
+    span:hover {
+        img {
+            transform: translateY(-35px) scale(0.9);
+            cursor: pointer;
+        }
+    }
+}
+
+/* GALERIA-3D-FIN */
+
+/* GALERIA */
+
+.galeria-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    width: 70%;
+    margin: auto;
+    grid-gap: 17px;
+    padding: 40px 0;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        vertical-align: top;
+        object-fit: cover;
+        transition: transform 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    >a {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+        border-radius: 5px;
+    }
+
+    a:hover {
+        img {
+            filter: blur(1px);
+            transform: rotate(10deg) scale(0.9);
+        }
+    }
+}
+
+@media screen and (max-width:1163px) {
+    .galeria-2 {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        width: 68%;
+        margin: auto;
+        grid-gap: 17px;
+        padding: 40px 0;
+        overflow: hidden;
+    }
+}
+
+.light-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    transition: transform .3s ease-in-out;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+
+    img {
+        width: 40vw;
+        max-height: 67vh;
+    }
+}
+
+.light-box:target {
+    transform: scale(5.3);
+}
+
+/* GALERIA-FIN */
+
+/* GALERIA-ARTICULO */
+
+.articulo-goku {
+    margin: 80px 0;
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 155px;
+}
+
+/* GALERIA-ARTICULO-FIN */

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/45880842ed.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>INICIO</title>
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+
+    <header class="header-nav">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="./index.html" class="enlace">
+                <img src="./recursos/imagenes/akira.png" alt="Logo" class="logo">
+            </a>
+            <ul>
+                <li><a href="./index.html" class="active">INICIO</a></li>
+                <li><a href="./secciones/Galeria.html">GALERIA</a></li>
+                <li><a href="./secciones/Biografía.html">BIOGRAFÍA</a></li>
+                <li><a href="./secciones/Obras.html">OBRAS</a></li>
+                <li><a href="./secciones/Contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+
+    <main>
+        <section>
+            <div id="carouselExampleInterval" class="carousel slide animate__animated animate__bounce"
+                data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./recursos/imagenes/akira_toriyama-1.jpg" class="d-block w-100" alt="Akira Foto 1">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./recursos/imagenes/akira_toriyama-2.jpg" class="d-block w-100" alt="Akira Foto 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./recursos/imagenes/akira_toriyama-3.jpg" class="d-block w-100" alt="Akira Foto 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <article class="frase__akira wow animate__animated animate__fadeInDown">
+            <h1>“Lo único que quería era dibujar para traer felicidad
+                a
+                los niños” <strong>- Akira Toriyama</strong></h1>
+            <hr>
+        </article>
+
+        <!-- TARJETAS-GIRATORIAS -->
+
+        <h2 class="titulo-tarjetas wow animate__animated animate__jackInTheBox">MANGAS</h2>
+
+        <section class="tarjetas">
+            <div class="tarjeta">
+                <div class="face front">
+                    <img src="./recursos/imagenes/obras/Dr-Slump.jpg" alt="Dr Slump">
+                    <h3>Dr Slump</h3>
+                </div>
+                <div class="face back">
+                    <h3>1979-1984</h3>
+                    <p>Esta es la primera serie de larga duración del género manga creada por Toriyama.</p>
+                    <div class="link">
+                        <a href="./secciones/Obras.html">Detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="face front">
+                    <img src="./recursos/imagenes/obras/Dragon-Ball.jpg" alt="Dragon Ball">
+                    <h3>Dragon Ball</h3>
+                </div>
+                <div class="face back">
+                    <h3>1984-1995</h3>
+                    <p>Es un manga escrito e ilustrado por Akira Toriyama, con un total de 519 capítulos impresos.
+                    </p>
+                    <div class="link">
+                        <a href="./secciones/Obras.html">Detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="face front">
+                    <img src="./recursos/imagenes/obras/Kajika.jpg" alt="Kajika">
+                    <h3>Kajika</h3>
+                </div>
+                <div class="face back">
+                    <h3>1998</h3>
+                    <p>Es un manga de Akira Toriyama que fue publicado en la revista Shōnen Jump entre la edición 32
+                        y
+                        44 del año 1998 y compilada en un único volumen.</p>
+                    <div class="link">
+                        <a href="./secciones/Obras.html">Detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="face front">
+                    <img src="./recursos/imagenes/obras/Sand-Land.jpg" alt="Sand Land">
+                    <h3>Sand Land</h3>
+                </div>
+                <div class="face back">
+                    <h3>2000</h3>
+                    <p>Es un manga corto de catorce capítulos escrito y dibujado por Akira Toriyama, fue publicado
+                        en la revista Weekly Shonen Jump desde junio hasta septiembre del año 2000.</p>
+                    <div class="link">
+                        <a href="./secciones/Obras.html">Detalles</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="d-flex justify-content-center">
+            <a href="./secciones/Galeria.html" class="btn btn-outline-danger btn-lg" tabindex="-1" role="button"
+                aria-disabled="true">VER GALERIA</a>
+        </div>
+
+        <!-- TARJETAS-GIRATORIAS-FIN -->
+
+    </main>
+
+    <!-- Pie de pagina -->
+
+    <footer class="footer-color">
+        <div class="redes-container">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=100044552284376" class="facebook"
+                        target="_blank"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/akira.toriyama/?hl=es" class="instagram" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/TeamToriyama" class="twitter" target="_blank"><i
+                            class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                   <a href="https://github.com/SamiTolentino/PreEntrega2-Sammai-Tolentino" class="github"
+                        target="_blank"><i class="fa-brands fa-github"></i></a>
+                </li>
+            </ul>
+        </div>
+        <section class="footer__parrafo">
+            <p><strong>© 2023 by Sammai Tolentino.</strong> All rights reserved.</p>
+        </section>
+    </footer>
+    <script src="../js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/45880842ed.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

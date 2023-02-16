@@ -1,0 +1,145 @@
+/* BIOGRAFIA */
+
+.biografia__main--foto {
+    overflow: hidden;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+}
+
+.biografia__main {
+    margin: auto;
+    width: 85%;
+    overflow: hidden;
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+    img {
+        max-width: 70%;
+        height: auto;
+        background-color: #0dcaf07e;
+        border-radius: 8px;
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175)
+    }
+
+}
+
+@media screen and (max-width:1150px) {
+    .biografia {
+        img {
+            max-width: 85%;
+        }
+    }
+}
+
+@media screen and (max-width:642px) {
+    .biografia__main {
+        width: 100%;
+    }
+
+    .biografia__main--foto {
+        margin: 30px;
+    }
+}
+
+@media screen and (max-width:458px) {
+    .biografia__main {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    .biografia {
+        img {
+            max-width: 95%;
+        }
+    }
+
+    .biografia__main--foto {
+        margin: 30px;
+    }
+}
+
+.biografia__mainParrafo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5em;
+    margin: 30px;
+    text-align: center;
+    background-color: #0dcaf075;
+    border-radius: 10px;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175)
+}
+
+.biografia__mainParrafo {
+    h1 {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 15px;
+        color: rgb(255, 255, 255);
+        padding: 5px;
+        margin: 5px;
+    }
+}
+
+@media (max-width:458px) {
+    .biografia__mainParrafo {
+        p {
+            font-size: 13px;
+        }
+    }
+}
+
+.top-section {
+    text-align: center;
+    padding: 4rem 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* BIOGRAFIA-FIN */
+
+/* TIMELINE-BIOGRAFIA */
+
+#section-1 .description {
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+#section-1 .timeline-content {
+    margin-bottom: 15px;
+    background: rgba(0, 255, 255, 0.37);
+}
+
+.timeline-monochrome .main-timeline .timeline:first-child:before,
+.timeline-monochrome .main-timeline .timeline:last-child:before {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.top-section {
+    h2 {
+        color: #dfff00;
+        font-weight: bold;
+        font-size: 35px;
+    }
+}
+
+.timeline-monochrome .main-timeline:before {
+    height: 74.5%;
+    top: 106px;
+}
+
+@media (max-width:991px) {
+    .timeline-monochrome .main-timeline:before {
+        height: 75.5%;
+    }
+}
+
+/* TIMELINE-BIOGRAFIA-FIN */

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/45880842ed.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>CONTACTO</title>
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+
+    <header class="header-nav">
+        <!-- Navegación -->
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="../index.html" class="enlace">
+                <img src="../recursos/imagenes/akira.png" alt="Logo" class="logo">
+            </a>
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="./Galeria.html">GALERIA</a></li>
+                <li><a href="./Biografía.html">BIOGRAFÍA</a></li>
+                <li><a href="./Obras.html">OBRAS</a></li>
+                <li><a href="./Contacto.html" class="active">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+
+    <main class="contacto">
+        <section class="main">
+            <figure class="main__figure">
+                <img src="../recursos/imagenes/Tori-Bot.png" class="main__img" alt="Tori Bot">
+            </figure>
+            <div class="main__contact">
+                <h1>CONTACTO</h1>
+                <form action="#" method="get" class="main__form">
+                    <label>Nombre</label>
+                    <input type="text" placeholder="First name" name="Nombre" class="main__input">
+                    <label>Apellido</label>
+                    <input type="text" placeholder="Last name" name="Apellido" class="main__input">
+                    <label>Email</label>
+                    <input type="text" placeholder="Name@email.com" name="Email" class="main__input">
+                    <label>Telefono</label>
+                    <input type="text" placeholder="Phone Number" name="Tel" class="main__input">
+                    <input type="submit" value="ENVIAR" class="main__input main__input--send">
+                    <label>Mensaje</label>
+                    <textarea placeholder="If you liked the website, leave your comment here." cols="30" rows="8"
+                        name="Comentario" class="main__input"></textarea>
+                </form>
+            </div>
+        </section>
+        <article class="wow animate__animated animate__fadeInDown">
+            <h2>No importa dónde estés, siempre sentiré tu ki.</h2>
+        </article>
+
+    </main>
+
+    <!-- Pie de pagina -->
+    
+    <footer class="footer-color">
+        <div class="redes-container">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=100044552284376" class="facebook"
+                        target="_blank"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/akira.toriyama/?hl=es" class="instagram" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/TeamToriyama" class="twitter" target="_blank"><i
+                            class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                   <a href="https://github.com/SamiTolentino/PreEntrega2-Sammai-Tolentino" class="github"
+                        target="_blank"><i class="fa-brands fa-github"></i></a>
+                </li>
+            </ul>
+        </div>
+        <section class="footer__parrafo">
+            <p><strong>© 2023 by Sammai Tolentino.</strong> All rights reserved.</p>
+        </section>
+    </footer>
+    <script src="../js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://kit.fontawesome.com/45880842ed.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
