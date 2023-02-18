@@ -1,43 +1,51 @@
 /*NAVEGADOR*/
 
-nav {
-    background: #0d83f091;
-    height: 150px;
-    width: 100%;
+
+.header-nav {
+    nav {
+        background: #0d82f0a1;
+        height: 150px;
+        width: 100%;
+
+        ul {
+            float: right;
+            margin: -10px 0px;
+
+            li {
+
+                display: inline-block;
+                line-height: 80px;
+                margin: 37px 18px;
+
+                a.active,
+                a:hover {
+                    background: #a7291b;
+                    transition: .5s;
+                    font-size: 24px;
+                    color: aqua;
+                }
+
+                a {
+                    color: #FFFFFF;
+                    font-size: 20px;
+                    padding: 5px 10px;
+                    border-radius: 3px;
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+
 }
 
 .enlace {
     position: absolute;
     padding: 6px 30px;
-}
 
-.logo {
-    height: 130px;
-}
-
-nav ul {
-    float: right;
-    margin: -9px 0px;
-}
-
-nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 37px 18px;
-}
-
-nav ul li a {
-    color: #FFFFFF;
-    font-size: 20px;
-    padding: 5px 10px;
-    border-radius: 3px;
-    text-decoration: none;
-}
-
-li a.active,
-li a:hover {
-    background: #a7291b;
-    transition: .5s;
+    .logo {
+        height: 130px;
+    }
 }
 
 .checkbtn {
@@ -48,49 +56,100 @@ li a:hover {
     margin-right: 40px;
     cursor: pointer;
     display: none;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
 }
 
 #check {
     display: none;
 }
 
-@media (max-width:1165px) {
+@media (max-width:1160px) {
+    .header-nav {
+        nav ul li {
+            margin: 38px 18px;
+
+            a.active,
+            a:hover {
+                background: #a7291b;
+                transition: .5s;
+                font-size: 18px;
+                color: aqua;
+            }
+
+            a {
+                font-size: 15px;
+            }
+        }
+    }
+
     .enlace {
         padding: 14px 40px;
+
+        .logo {
+            height: 115px;
+        }
     }
 
-    .logo {
-        height: 115px;
-    }
-
-    nav ul li a {
-        font-size: 15px;
-    }
-
-    nav ul li {
-        margin: 38px 18px;
-    }
 }
 
-@media (max-width:1043px) {
+@media (max-width:1035px) {
+    .header-nav {
+        nav ul li {
+            margin: 37px 18px;
+
+            a {
+                font-size: 13px;
+            }
+        }
+    }
+
     .enlace {
         padding: 18px 32px;
+
+        .logo {
+            height: 105px;
+        }
     }
 
-    .logo {
-        height: 105px;
-    }
 
-    nav ul li a {
-        font-size: 13px;
-    }
-
-    nav ul li {
-        margin: 37px 18px;
-    }
 }
 
-@media (max-width:961px) {
+@media (max-width:955px) {
+
+    .header-nav {
+        nav ul {
+            position: fixed;
+            padding: 0px 50px;
+            background: #0d82f0b8;
+            top: 162px;
+            right: -100%;
+            text-align: center;
+            transition: all .5s;
+            z-index: 1000;
+            border-radius: 10px;
+
+            li {
+                display: block;
+                margin: 10px 0;
+                line-height: 17px;
+
+                a {
+                    font-size: 15px;
+                    padding: 0px 15px;
+                }
+
+                a.active,
+                a:hover {
+                    background: #a7291b;
+                    transition: .5s;
+                    font-size: 18px;
+                    color: aqua;
+                }
+            }
+        }
+    }
+
     .checkbtn {
         display: flex;
         padding: 8px 20px;
@@ -98,41 +157,12 @@ li a:hover {
         color: #FFFFFF;
     }
 
-    .logo {
-        height: 80px;
-    }
-
     .enlace {
         padding: 31px 22px;
-    }
 
-    nav ul {
-        position: fixed;
-        padding: 0px 50px;
-        background: #0d82f0aa;
-        top: 162px;
-        right: -100%;
-        text-align: center;
-        transition: all .5s;
-        z-index: 1000;
-        border-radius: 10px;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-        line-height: 17px;
-    }
-
-    nav ul li a {
-        font-size: 15px;
-        padding: 0px 15px;
-    }
-
-    li a.active,
-    li a:hover {
-        background: #a7291b;
-        transition: .5s;
+        .logo {
+            height: 80px;
+        }
     }
 
     #check:checked~ul {
