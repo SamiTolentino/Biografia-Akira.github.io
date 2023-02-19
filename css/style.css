@@ -20,12 +20,14 @@
   box-shadow: 25px 20px 5px 25px #0d82f0aa; }
   .footer-color .redes-container {
     display: flex;
-    margin-bottom: -30px;
-    height: 14vh;
+    padding: 1rem;
+    padding-bottom: 0;
+    height: 100%;
     align-items: center;
     justify-content: center; }
     .footer-color .redes-container ul {
-      padding-left: 0; }
+      padding-left: 0;
+      margin-top: 10px; }
     .footer-color .redes-container ul li {
       display: inline-block;
       margin: 0 2px;
@@ -54,7 +56,7 @@
     color: #FFFFFF;
     justify-content: center;
     text-align: center;
-    padding-bottom: 15px; }
+    padding: 17px; }
 
 .redes-container ul:hover a {
   filter: blur(2px); }
@@ -351,7 +353,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden; }
+  overflow: hidden;
+  animation: mostrar 1.5s ease-out; }
 
 @media screen and (orientation: landscape) and (max-width: 915px) {
   .galeria-1 {

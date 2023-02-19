@@ -6,15 +6,16 @@
 
     .redes-container {
         display: flex;
-        margin-bottom: -30px;
-        height: 14vh;
+        padding: 1rem;
+        padding-bottom: 0;
+        // margin-bottom: -30px;
+        height: 100%;
         align-items: center;
         justify-content: center;
 
         ul {
             padding-left: 0;
-
-
+            margin-top: 10px
         }
 
         ul li {
@@ -60,7 +61,7 @@
         color: #FFFFFF;
         justify-content: center;
         text-align: center;
-        padding-bottom: 15px;
+        padding: 17px;
     }
 
 }
