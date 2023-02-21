@@ -1,11 +1,13 @@
+/*VARIABLES*/
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Gemstones&family=Space+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Gemstones&family=Space+Mono:ital@0;1&display=swap");
 :root {
   --facebook: #3b5999;
   --instagram: #e4405f;
-  --twitter: #55acee;
+  --linkedin: #0A66C2;
   --github: #24292f; }
 
+/*RESET*/
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +16,7 @@
   font-family: 'Rubik Gemstones', cursive;
   font-family: 'Space Mono', monospace; }
 
+/*SECCIONES*/
 /* FOOTER */
 .footer-color {
   background: #0d82f059;
@@ -38,8 +41,8 @@
         background: var(--facebook); }
       .footer-color .redes-container ul li .instagram:hover {
         background: var(--instagram); }
-      .footer-color .redes-container ul li .twitter:hover {
-        background: var(--twitter); }
+      .footer-color .redes-container ul li .linkedin:hover {
+        background: var(--linkedin); }
       .footer-color .redes-container ul li .github:hover {
         background: var(--github); }
     .footer-color .redes-container a {
@@ -269,12 +272,18 @@
   font-size: 35px; }
 
 .timeline-monochrome .main-timeline:before {
-  height: 74.5%;
-  top: 106px; }
+  height: 75.5%;
+  top: 97px; }
 
 @media (max-width: 991px) {
   .timeline-monochrome .main-timeline:before {
-    height: 75.5%; } }
+    height: 76%;
+    top: 95px; } }
+
+@media (max-width: 338px) {
+  .timeline-monochrome .main-timeline:before {
+    height: 76%;
+    top: 95px; } }
 
 /* TIMELINE-BIOGRAFIA-FIN */
 /* CONTACTO */
@@ -308,7 +317,9 @@
     justify-content: center;
     text-align: center; }
     .contacto .main__contact h1 {
-      font-size: 2.3rem; }
+      color: #dfff00;
+      font-size: 50px;
+      font-weight: bold; }
     .contacto .main__contact .main__input {
       width: 80%;
       max-width: 500px;
@@ -501,11 +512,11 @@
   width: 15vh !important; }
 
 .carousel-inner img {
-  width: 47vh; }
+  width: 100%; }
 
 @media screen and (max-width: 991px) {
   .carousel-inner img {
-    width: 100vh; } }
+    width: 100%; } }
 
 .carousel-indicators button:before {
   position: absolute;
@@ -570,10 +581,14 @@
   background-color: #0dcaf072; }
 
 @media (max-width: 1199px) {
+  .experience-slide-text h4 {
+    font-size: 21px; }
   .experience-slide-text p {
     font-size: 17px; } }
 
 @media (max-width: 991px) {
+  .experience-slide-text h4 {
+    font-size: 15px; }
   .experience-slide-text p {
     font-size: 11px; } }
 

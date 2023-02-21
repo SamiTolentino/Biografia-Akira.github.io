@@ -132,13 +132,21 @@
 }
 
 .timeline-monochrome .main-timeline:before {
-    height: 74.5%;
-    top: 106px;
+    height: 75.5%;
+    top: 97px;
 }
 
 @media (max-width:991px) {
     .timeline-monochrome .main-timeline:before {
-        height: 75.5%;
+        height: 76%;
+        top: 95px;
+    }
+}
+
+@media (max-width:338px){
+    .timeline-monochrome .main-timeline:before {
+        height: 76%;
+        top: 95px;
     }
 }
 
