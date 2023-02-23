@@ -152,16 +152,20 @@
 
     .checkbtn {
         display: flex;
-        padding: 8px 20px;
+        padding: 7px 18px;
         margin: 50px 10px;
         color: #FFFFFF;
+        i{
+            font-size: 35px;
+            font-weight: none;
+        }
     }
 
     .enlace {
-        padding: 31px 22px;
+        padding: 27px 22px;
 
         .logo {
-            height: 80px;
+            height: 95px;
         }
     }
 
